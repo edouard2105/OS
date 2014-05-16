@@ -6,7 +6,7 @@
 #Installer RHC
 #sudo gem install rhc
 
-#Connexion à Openshift (login : edouard.decarpentry@gmail.com psw : rtrxxd)
+#Connexion à Openshift (login : edouard.decarpentry@gmail.com password : rtrxxd)
 rhc setup
 
 #Création d'une application en php + ajout bdd mysql + phpmyadmin
