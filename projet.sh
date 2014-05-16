@@ -1,18 +1,6 @@
 #!/bin/bash
-set ssh://5371f70e50044613ab000495@projetos-edouard.rhcloud.com/~/git/projetos.git/
-
-#Connexion à Openshift (login : edouard.decarpentry@gmail.com password : rtrxxd)
-rhc setup
-
-#Création d'une application en php + ajout bdd mysql + phpmyadmin
-rhc app create -a projet -t php-5.3
-rhc app cartridge add -a projet -c mysql-5.5
-rhc app cartridge add -a projet -c phpmyadmin
-
-#Importer mannuellement la BDD via un dump
-
-#Ajout de la clé ssh sur Openshift
-rhc sshkey add cat ~/.ssh/.id_rsa.pub
+#Mettre dans la variable l'URL du projet
+set ssh://53760dae4382ec8b61000111@projet-edouard.rhcloud.com/~/git/projet.git/
 
 #Ajout du site web 
 git init
