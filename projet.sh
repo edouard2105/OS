@@ -5,7 +5,7 @@
 #2.Nom de la base de données 
 #3.User BDD
 #4.Password BDD
-set ssh://53760dae4382ec8b61000111@projet-edouard.rhcloud.com/~/git/projet.git/ projet adminQjM djffP
+set ssh://53773d6d5004465d9a000128@projet-edouard.rhcloud.com/~/git/projet.git/ projet adminmPlQtgY Fv4ijUL2mVum
 
 #Ajout du site web 
 git init
@@ -21,9 +21,9 @@ cd projet
 #Modification des identifiants de la base de données
 echo '<?php
 define("DB_HOST", "localhost");
-define("DB_LOGIN", "'$2'");
-define("DB_PASS", "'$3'");
-define("DB_BDD", "'$1'");
+define("DB_LOGIN", "'$3'");
+define("DB_PASS", "'$4'");
+define("DB_BDD", "'$2'");
  ?>' > config.php
 
 #Commit
