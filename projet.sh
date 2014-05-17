@@ -7,10 +7,12 @@ git init
 git clone $1
 
 #Copie du projet APP (dossier site) dans projet
-mkdir projet
-cp -R site projet
 cd projet
-git add -A
+rm index.php
+cd
+cp -r site/* projet
+cd projet
+git add -A :/
 git commit -m "Ajout du site"
 git push origin master
 
